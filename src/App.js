@@ -38,7 +38,7 @@ function App() {
         <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-slate-900">
         <section>
           {/* navbar section need a hrefs */}
-          <nav className="py-10 flex justify-between">
+          <nav className="pt-4 flex justify-between">
             <span></span>
             <ul className="flex items-center">
               <li>
@@ -54,7 +54,7 @@ function App() {
           {/* Intro */}
 
           <div className=" text-center">
-            <h2 className=" text-4xl py-4 px-0 text-teal-600 font-medium md:text-6xl">
+            <h2 className=" text-4xl py-2 px-0 text-teal-600 font-medium md:text-6xl">
               Ben Cutler-Ames
             </h2>
             <h3 className=" text-2xl py-2 md:text-3xl dark:text-white">
@@ -184,7 +184,7 @@ function App() {
             {" "}
             Contact Me
           </h3>
-          <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
+          <p className="text-medium py-2 leading-8 text-gray-800 mx-auto md:text-xl max-w-3xl  dark:text-gray-200">
             I am interested in employment opportunities, mentorship or just
             generally kind words. If you have these, or anything else to say ,
             don&apos;t hesitate to contact me using the form below.
@@ -193,7 +193,7 @@ function App() {
             <ul className="mx-auto">
               <li className="mx-auto">
                 <input
-                  className="bg-blue-100 rounded-md py-1 px-3 w-96 mb-2 text-xl  md:text-2xl md:py-3"
+                  className="bg-blue-100 rounded-md py-1 px-3  max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
                   type="text"
                   name="name"
                   placeholder="Name"
@@ -202,7 +202,7 @@ function App() {
               </li>
               <li>
                 <input
-                  className="bg-blue-100 rounded-md py-1 px-3 w-96 mb-2 text-xl  md:text-2xl md:py-3"
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -211,7 +211,7 @@ function App() {
               </li>
               <li>
                 <input
-                  className="bg-blue-100 rounded-md py-1 px-3 w-96 mb-2 text-xl  md:text-2xl md:py-3"
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md:text-2xl md: w-96 md:py-3"
                   type="text"
                   placeholder="Subject"
                   name="subject"
@@ -220,7 +220,7 @@ function App() {
               </li>
               <li>
                 <textarea
-                  className="bg-blue-100 rounded-md py-1 px-3 w-96 mb-2 text-xl md:text-2xl md:py-3"
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl md: w-96 md:text-2xl md:py-3"
                   placeholder="Message"
                   name="message"
                 />
