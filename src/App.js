@@ -75,12 +75,12 @@ function App() {
             </a>
           </div>
           {/* image */}
-          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-2 md:w-96 md:h-96">
+          <div className=" object-scale-down relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-2 md:w-96 md:h-96">
             <img
               src={bigFaceLogo}
               alt="logo"
-              layout="fill"
-              objectFit="scale-down"
+              className=' w-56 md:w-64 mx-auto'
+              
             />
           </div>
         </section>
@@ -114,10 +114,10 @@ function App() {
             <h3 className="text-3xl py-1 text-center md:text-4xl md:py-3 dark:text-white">
               Portfolio
             </h3>
-            <div className="lg:flex gap-10 justify-center">
+            <div className="justify-center lg:flex gap-10 ">
               <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
                 <a href="https://github.com/BenCutlerAmes/Gym_Management_App" target='_blank' rel='noreferrer'>
-                  <img src={gym} alt="screenshot" width={500} height={281} />
+                  <img src={gym} alt="screenshot" width={500} height={281} className="mx-auto"/>
                 </a>
                 <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                   Gym Management App
@@ -133,7 +133,7 @@ function App() {
               </div>
 
               <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
-                <a href="https://github.com/BenCutlerAmes/Simpsons-Top-Trumps" target='_blank' rel='noreferrer'>
+                <a href="https://github.com/BenCutlerAmes/Simpsons-Top-Trumps" target='_blank' rel='noreferrer' className="mx-auto">
                   <img
                     src={simpsons}
                     alt="screenshot"
@@ -153,7 +153,7 @@ function App() {
               </div>
 
               <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
-                <a href="https://github.com/BenCutlerAmes/portfolio-website" target='_blank' rel='noreferrer'>
+                <a href="https://github.com/BenCutlerAmes/portfolio-website" target='_blank' rel='noreferrer' className="mx-auto">
                   <img
                     src={portfolio}
                     alt="screenshot"
