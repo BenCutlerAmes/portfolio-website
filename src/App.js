@@ -13,6 +13,8 @@ function App() {
 
   const refForm = useRef();
 
+  const h3Format = "text-2xl py-2 md:text-3xl dark:text-white"
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -57,7 +59,7 @@ function App() {
             <h2 className=" text-4xl py-2 px-0 text-teal-600 font-medium md:text-6xl">
               Ben Cutler-Ames
             </h2>
-            <h3 className=" text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className={h3Format}>
               Software Developer
             </h3>
             <p className=" text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200">
