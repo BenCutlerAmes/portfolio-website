@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import bigFaceLogo from "./assets/bigfacetrans.png";
 import gym from "./assets/gym-app-screenshot.png";
 import simpsons from "./assets/simpsons-toptrumps-screenshot.png";
-import portfolio from "./assets/portfolio-screenshot.png";
+import woofing from "./assets/woofing.png";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -142,85 +142,99 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
-                  <img
-                    src={gym}
-                    alt="screenshot"
-                    width={500}
-                    height={281}
-                    className="mx-auto"
-                  />
-
+                <div className="flex flex-col justify-between text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
+                  <div className="h-64 w-full overflow-hidden">
+                    <img
+                      src={gym}
+                      alt="screenshot"
+                      className="mx-auto h-full w-full object-contain"
+                    />
+                  </div>
                   <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                     Gym Management App
                   </h3>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    Python
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    PostgreSQL
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">Flask</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    Psycopg2
-                  </p>
+                  <div>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Python
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      PostgreSQL
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Flask
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Psycopg2
+                    </p>
+                  </div>
                 </div>
               </a>
+
               <a
                 href="https://github.com/BenCutlerAmes/Simpsons-Top-Trumps"
                 target="_blank"
                 rel="noreferrer"
                 className="mx-auto"
               >
-                <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
-                  <img
-                    src={simpsons}
-                    alt="screenshot"
-                    width={500}
-                    height={281}
-                  />
+                <div className="flex flex-col justify-between text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
+                  <div className="h-64 w-full overflow-hidden">
+                    <img
+                      src={simpsons}
+                      alt="screenshot"
+                      className="mx-auto h-full w-full object-contain"
+                    />
+                  </div>
                   <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                     Simpsons Top Trumps
                   </h3>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    JavaScript
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">React</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    MongoDB
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    Express
-                  </p>
+                  <div>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      JavaScript
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      React
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      MongoDB
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Express
+                    </p>
+                  </div>
                 </div>
               </a>
 
               <a
-                href="https://github.com/BenCutlerAmes/portfolio-website"
+                href="https://github.com/BenCutlerAmes/react-woofing-from-home-client"
                 target="_blank"
                 rel="noreferrer"
                 className="mx-auto"
               >
-                <div className=" text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
-                  <img
-                    src={portfolio}
-                    alt="screenshot"
-                    width={500}
-                    height={281}
-                  />
+                <div className="flex flex-col justify-between text-center shadow-2xl shadow-black p-10 rounded-xl my-10 dark:shadow-white dark:shadow-lg">
+                  <div className="h-64 w-full overflow-hidden">
+                    <img
+                      src={woofing}
+                      alt="screenshot"
+                      className="mx-auto h-full w-full object-contain"
+                    />
+                  </div>
                   <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
-                    Portfolio Website
+                    Woofing From Home
                   </h3>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">React</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    Tailwind
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    JavaScript
-                  </p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">
-                    Firebase
-                  </p>
+                  <div>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Java
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      React
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Tailwind
+                    </p>
+                    <p className="text-gray-800 py-1 dark:text-gray-200">
+                      Firebase
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -232,11 +246,19 @@ function App() {
             {" "}
             Contact Me
           </h3>
-          <p className="text-medium py-2 leading-8 text-gray-800 mx-auto md:text-xl max-w-3xl  dark:text-gray-200">
-            I am interested in employment opportunities, mentorship or just
-            generally kind words. If you have these, or anything else to say ,
-            don&apos;t hesitate to contact me using the form below.
+          <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
+            I am always open to collaboration, mentorship, and discussions
+            related to the technology sector, especially initiatives aimed at
+            promoting diversity and empowering women in tech. If you are
+            interested in exploring employment opportunities, discussing code
+            education, or sharing your thoughts and experiences, I would be
+            thrilled to hear from you. Please don't hesitate to reach out using
+            the form below.
           </p>
+          <p className="text-lg text-center py-4 leading-relaxed text-gray-700 mx-auto md:text-2xl max-w-3xl dark:text-gray-300">
+            Together, we can make the tech industry more inclusive and vibrant.
+          </p>
+
           <form className="text-center" ref={refForm} onSubmit={sendEmail}>
             <ul className="mx-auto">
               <li className="mx-auto">
