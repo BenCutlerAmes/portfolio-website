@@ -82,6 +82,7 @@ function App() {
             </a>
           </div>
           {/* image */}
+         
           <div className=" object-scale-down relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-2 md:w-96 md:h-96">
             <img
               src={bigFaceLogo}
@@ -99,43 +100,95 @@ function App() {
               About Me
             </h3>
             <p className=" text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-              I am a full-stack developer, equipped with skills in C#,
-              JavaScript, and Vue.js, and an enthusiastic tech educator. Having
-              transitioned from a background as a Mathematics Teacher and
-              Housemaster to the vibrant world of technology, I successfully
-              completed my Professional Software Development course at CodeClan
-              in Edinburgh.
-            </p>
-            <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-              My previous experience has honed my analysis, leadership, and
-              interpersonal skills, and these strengths have laid a robust
-              foundation for my career shift into the tech sector. Now, I use
-              these skills to craft dynamic, user-friendly software solutions,
-              and I strive to share these skills with the next generation of
-              coders.
-            </p>
-            <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-              Additionally, I am passionate about using my expertise to address
-              the gender gap in the tech industry as an instructor for Code
-              First: Girls. In this role, I get the opportunity to inspire and
-              educate young women, teaching them vital coding skills and
-              fostering an environment that encourages diversity.
-            </p>
-            <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-              With three major course projects completed, I am now fully
-              immersed in my new career as a developer and tech educator.
-              However, I am always open to new opportunities that allow me to
-              apply my skills, further expand my knowledge, and contribute
-              positively to the tech industry.{" "}
+              Full-stack developer with a unique background as a Mathematics
+              Teacher and Housemaster, trained at CodeClan in Edinburgh. Skilled
+              in C#, JavaScript, and Vue.js, I blend analytical thinking,
+              leadership, and interpersonal skills from my past roles to create
+              dynamic and user-friendly software. I'm also an enthusiastic tech
+              educator, passionate about addressing the gender gap in tech as an
+              instructor for Code First: Girls. There, I inspire young women by
+              teaching vital coding skills and fostering a diverse environment.
+              Fully committed to my new career but always eager to learn and
+              make a positive impact.
             </p>
           </div>
+        </section>
+
+        <section>
+          <h3 className="text-3xl py-1 text-center md:text-4xl md:py-3 dark:text-white">
+            {" "}
+            Contact Me
+          </h3>
+          <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
+            I am always open to collaboration, mentorship, and discussions
+            related to the technology sector, especially initiatives aimed at
+            promoting diversity and empowering women in tech. If you are
+            interested in exploring employment opportunities, discussing code
+            education, or sharing your thoughts and experiences, I would be
+            thrilled to hear from you. Please don't hesitate to reach out using
+            the form below.
+          </p>
+
+          <form className="text-center" ref={refForm} onSubmit={sendEmail}>
+            <ul className="mx-auto">
+              <li className="mx-auto">
+                <input
+                  className="bg-blue-100 rounded-md py-1 px-3  max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md:text-2xl md: w-96 md:py-3"
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl md: w-96 md:text-2xl md:py-3"
+                  placeholder="Message"
+                  name="message"
+                />
+              </li>
+              <li>
+                <input
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md cursor-pointer"
+                  type="submit"
+                  value="SEND"
+                />
+              </li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <br />
+          </form>
         </section>
         <section>
           {/* portfolio pages - need to update links to github */}
           <div>
             <h3 className="text-3xl py-1 text-center md:text-4xl md:py-3 dark:text-white">
-              Portfolio
+              Training Project Portfolio
             </h3>
+            <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
+              A small collection of the project completed during my time at
+              CodeClan
+            </p>
             <div className="justify-center lg:flex gap-10 ">
               <a
                 href="https://github.com/BenCutlerAmes/Gym_Management_App"
@@ -239,75 +292,6 @@ function App() {
               </a>
             </div>
           </div>
-        </section>
-
-        <section>
-          <h3 className="text-3xl py-1 text-center md:text-4xl md:py-3 dark:text-white">
-            {" "}
-            Contact Me
-          </h3>
-          <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-            I am always open to collaboration, mentorship, and discussions
-            related to the technology sector, especially initiatives aimed at
-            promoting diversity and empowering women in tech. If you are
-            interested in exploring employment opportunities, discussing code
-            education, or sharing your thoughts and experiences, I would be
-            thrilled to hear from you. Please don't hesitate to reach out using
-            the form below.
-          </p>
-          <p className="text-lg text-center py-4 leading-relaxed text-gray-700 mx-auto md:text-2xl max-w-3xl dark:text-gray-300">
-            Together, we can make the tech industry more inclusive and vibrant.
-          </p>
-
-          <form className="text-center" ref={refForm} onSubmit={sendEmail}>
-            <ul className="mx-auto">
-              <li className="mx-auto">
-                <input
-                  className="bg-blue-100 rounded-md py-1 px-3  max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-              </li>
-              <li>
-                <input
-                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md: w-96 md:text-2xl md:py-3"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </li>
-              <li>
-                <input
-                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl  md:text-2xl md: w-96 md:py-3"
-                  type="text"
-                  placeholder="Subject"
-                  name="subject"
-                  required
-                />
-              </li>
-              <li>
-                <textarea
-                  className="bg-blue-100 rounded-md py-1 px-3 max-w-full mb-2 text-xl md: w-96 md:text-2xl md:py-3"
-                  placeholder="Message"
-                  name="message"
-                />
-              </li>
-              <li>
-                <input
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md cursor-pointer"
-                  type="submit"
-                  value="SEND"
-                />
-              </li>
-            </ul>
-            <br />
-            <br />
-            <br />
-            <br />
-          </form>
         </section>
       </main>
     </div>
