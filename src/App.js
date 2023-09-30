@@ -185,7 +185,7 @@ function App() {
             <h3 className="text-3xl py-1 text-center md:text-4xl md:py-3 dark:text-white">
               Training Project Portfolio
             </h3>
-            <p className="text-medium py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
+            <p className="text-medium text-center py-2 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
               A small collection of the project completed during my time at
               CodeClan
             </p>
